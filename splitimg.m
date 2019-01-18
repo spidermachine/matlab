@@ -141,7 +141,7 @@ for i=1:ss(1,1)
 end
 
 subplot(9, 3, 6);
-newim = imremovenoise(newim, val);
+% newim = imremovenoise(newim, val);
 imshow(newim);
 
 im = newim;

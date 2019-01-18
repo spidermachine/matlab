@@ -9,11 +9,13 @@ for i=2:ss(1,1)-3
         if imgValue(img, i,j-1) == 0 && imgValue(img, i,j) == 1 && imgValue(img, i, j +1) == 1 && imgValue(img, i,j +2) == 0
             newimg(i, j, :) = val;
             newimg(i, j+1, :) = val;
+%             newimg(i, j+2, :) = val;
         end
         
         if imgValue(img, i - 1,j) == 0 && imgValue(img, i,j) == 1 && imgValue(img, i + 1, j) == 1 && imgValue(img, i + 2, j) == 0
             newimg(i, j, :) = val;
             newimg(i + 1, j, :) = val;
+%             newimg(i + 2, j, :) = val;
         end
     end
 end
